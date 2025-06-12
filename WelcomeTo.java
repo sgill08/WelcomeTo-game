@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class WelcomeTo
 {
+	//creating 
 	public static final String localDir = System.getProperty("system.dir");
 	public static final int CARDBACK_SIZE_X = 120;
 	public static final int CARDBACK_SIZE_Y = 175;
@@ -84,6 +85,7 @@ public class WelcomeTo
 		oldCards[2] = new JLabel();
 		oldCards[3] = new JLabel();
 
+	    	//declaring card values
 		oldCards[0].setBounds(1000, 200, CARDBACK_SIZE_X, CARDBACK_SIZE_Y);
 		oldCards[0].setVisible(true);
 		mainPanel.add(oldCards[0]);
@@ -100,6 +102,7 @@ public class WelcomeTo
 		oldCards[3].setVisible(true);
 		mainPanel.add(oldCards[3]);
 
+	    	//Adding cards to the card list
 		currCards.add(new Card("Fence", 1));
 		currCards.add(new Card("Market", 1));
 		currCards.add(new Card("Park", 1));
@@ -171,7 +174,7 @@ public class WelcomeTo
 		currCards.add(new Card("Market", 15));
 		currCards.add(new Card("Park", 15));
 
-
+		//Making Jlabels for the images
 		JLabel Image1 = new JLabel();
 		Image1.setBounds(1000,200,200,300);
 		mainPanel.add(Image1);
@@ -194,16 +197,18 @@ public class WelcomeTo
 		ImageBack3.setBounds(1500, 600, 200, 300);
 		mainPanel.add(ImageBack3);
 
+	    	//next button creating
 		JButton nextCards = new JButton("Next Cards");
 		nextCards.setBounds(1000, 100, 100, 50);
 		mainPanel.add(nextCards);
 
+	    	//making the next button work
 		nextCards.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent e){
-				ImageIcon Ione = new ImageIcon("Welcome To/Welcome To/15_Market.png");
-				ImageIcon ITwo = new ImageIcon("Welcome To/Welcome To/8_Park.png");
-				ImageIcon IThree = new ImageIcon("Welcome To/Welcome To/4_Pool.png");
+				ImageIcon Ione = new ImageIcon("Welcome To/Welcome To/card(i).png");
+				ImageIcon ITwo = new ImageIcon("Welcome To/Welcome To/card(i).png");
+				ImageIcon IThree = new ImageIcon("Welcome To/Welcome To/card(i).png");
 
 				Image1.setIcon(Ione);
 
@@ -213,244 +218,9 @@ public class WelcomeTo
 				
 				nextCards.setVisible(false);
 			}
-		});
-
-		JButton nextCards2 = new JButton("Next Cards");
-		nextCards2.setBounds(1000, 100, 100, 50);
-		mainPanel.add(nextCards2);
-
-		nextCards2.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e){
-				ImageIcon one = new ImageIcon("Welcome To/Welcome To/12_Construction.png");
-				ImageIcon Two = new ImageIcon("Welcome To/Welcome To/10_Pool.png");
-				ImageIcon Three = new ImageIcon("Welcome To/Welcome To/7_Market.png");
-				ImageIcon Four = new ImageIcon("Welcome To/Welcome To/B_Market.png");
-				ImageIcon Five = new ImageIcon("Welcome To/Welcome To/B_Park.png");
-				ImageIcon Six = new ImageIcon("Welcome To/Welcome To/B_Pool.png");
-
-				Image1.setIcon(one);
-				Image2.setIcon(Two);
-				Image3.setIcon(Three);
-				ImageBack1.setIcon(Four);
-				ImageBack2.setIcon(Five);
-				ImageBack3.setIcon(Six);
-				
-				nextCards2.setVisible(false);
-			}
-		});
-
-		JButton nextCards3 = new JButton("Next Cards");
-		nextCards3.setBounds(1000, 100, 100, 50);
-		mainPanel.add(nextCards3);
-
-		nextCards3.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e){
-				ImageIcon one = new ImageIcon("Welcome To/Welcome To/13_Fence.png");
-				ImageIcon Two = new ImageIcon("Welcome To/Welcome To/9_Park.png");
-				ImageIcon Three = new ImageIcon("Welcome To/Welcome To/4_Bis.png");
-				ImageIcon Four = new ImageIcon("Welcome To/Welcome To/B_ConStruction.png");
-				ImageIcon Five = new ImageIcon("Welcome To/Welcome To/B_Pool.png");
-				ImageIcon Six = new ImageIcon("Welcome To/Welcome To/B_Market.png");
-
-				Image1.setIcon(one);
-				Image2.setIcon(Two);
-				Image3.setIcon(Three);
-				ImageBack1.setIcon(Four);
-				ImageBack2.setIcon(Five);
-				ImageBack3.setIcon(Six);
-				
-				nextCards3.setVisible(false);
-			}
-		});
+		}
 		
-		JButton nextCards4 = new JButton("Next Cards");
-		nextCards4.setBounds(1000, 100, 100, 50);
-		mainPanel.add(nextCards4);
-
-		nextCards4.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e){
-				ImageIcon one = new ImageIcon("Welcome To/Welcome To/6_Park.png");
-				ImageIcon Two = new ImageIcon("Welcome To/Welcome To/1_Market.png");
-				ImageIcon Three = new ImageIcon("Welcome To/Welcome To/7_Construction.png");
-				ImageIcon Four = new ImageIcon("Welcome To/Welcome To/B_Fence.png");
-				ImageIcon Five = new ImageIcon("Welcome To/Welcome To/B_Park.png");
-				ImageIcon Six = new ImageIcon("Welcome To/Welcome To/B_Bis.png");
-
-				Image1.setIcon(one);
-				Image2.setIcon(Two);
-				Image3.setIcon(Three);
-				ImageBack1.setIcon(Four);
-				ImageBack2.setIcon(Five);
-				ImageBack3.setIcon(Six);
-				
-				nextCards4.setVisible(false);
-			}
-		});
-
-		JButton nextCards5 = new JButton("Next Cards");
-		nextCards5.setBounds(1000, 100, 100, 50);
-		mainPanel.add(nextCards5);
-
-		nextCards5.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e){
-				ImageIcon one = new ImageIcon("Welcome To/Welcome To/5_Park.png");
-				ImageIcon Two = new ImageIcon("Welcome To/Welcome To/3_Construction.png");
-				ImageIcon Three = new ImageIcon("Welcome To/Welcome To/11_Fence.png");
-				ImageIcon Four = new ImageIcon("Welcome To/Welcome To/B_Park.png");
-				ImageIcon Five = new ImageIcon("Welcome To/Welcome To/B_Market.png");
-				ImageIcon Six = new ImageIcon("Welcome To/Welcome To/B_Construction.png");
-
-				Image1.setIcon(one);
-				Image2.setIcon(Two);
-				Image3.setIcon(Three);
-				ImageBack1.setIcon(Four);
-				ImageBack2.setIcon(Five);
-				ImageBack3.setIcon(Six);
-				
-				nextCards5.setVisible(false);
-			}
-		});
-
-		JButton nextCards6 = new JButton("Next Cards");
-		nextCards6.setBounds(1000, 100, 100, 50);
-		mainPanel.add(nextCards6);
-
-		nextCards6.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e){
-				ImageIcon one = new ImageIcon("Welcome To/Welcome To/14_Fence.png");
-				ImageIcon Two = new ImageIcon("Welcome To/Welcome To/7_Market.png");
-				ImageIcon Three = new ImageIcon("Welcome To/Welcome To/8_Fence.png");
-				ImageIcon Four = new ImageIcon("Welcome To/Welcome To/B_Park.png");
-				ImageIcon Five = new ImageIcon("Welcome To/Welcome To/B_Construction.png");
-				ImageIcon Six = new ImageIcon("Welcome To/Welcome To/B_Fence.png");
-
-				Image1.setIcon(one);
-				Image2.setIcon(Two);
-				Image3.setIcon(Three);
-				ImageBack1.setIcon(Four);
-				ImageBack2.setIcon(Five);
-				ImageBack3.setIcon(Six);
-				
-				nextCards6.setVisible(false);
-			}
-		});
-
-		JButton nextCards7 = new JButton("Next Cards");
-		nextCards7.setBounds(1000, 100, 100, 50);
-		mainPanel.add(nextCards7);
-
-		nextCards7.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e){
-				ImageIcon one = new ImageIcon("Welcome To/Welcome To/9_Construction.png");
-				ImageIcon Two = new ImageIcon("Welcome To/Welcome To/6_Bis.png");
-				ImageIcon Three = new ImageIcon("Welcome To/Welcome To/2_Market.png");
-				ImageIcon Four = new ImageIcon("Welcome To/Welcome To/B_Fence.png");
-				ImageIcon Five = new ImageIcon("Welcome To/Welcome To/B_Market.png");
-				ImageIcon Six = new ImageIcon("Welcome To/Welcome To/B_Fence.png");
-
-				Image1.setIcon(one);
-				Image2.setIcon(Two);
-				Image3.setIcon(Three);
-				ImageBack1.setIcon(Four);
-				ImageBack2.setIcon(Five);
-				ImageBack3.setIcon(Six);
-				
-				nextCards7.setVisible(false);
-			}
-		});
-
-		JButton nextCards8 = new JButton("Next Cards");
-		nextCards8.setBounds(1000, 100, 100, 50);
-		mainPanel.add(nextCards8);
-
-		nextCards8.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e){
-				ImageIcon one = new ImageIcon("Welcome To/Welcome To/13_Pool.png");
-				ImageIcon Two = new ImageIcon("Welcome To/Welcome To/12_Park.png");
-				ImageIcon Three = new ImageIcon("Welcome To/Welcome To/8_Park.png");
-				ImageIcon Four = new ImageIcon("Welcome To/Welcome To/B_Construction.png");
-				ImageIcon Five = new ImageIcon("Welcome To/Welcome To/B_Bis.png");
-				ImageIcon Six = new ImageIcon("Welcome To/Welcome To/B_Market.png");
-
-				Image1.setIcon(one);
-				Image2.setIcon(Two);
-				Image3.setIcon(Three);
-				ImageBack1.setIcon(Four);
-				ImageBack2.setIcon(Five);
-				ImageBack3.setIcon(Six);
-				
-				nextCards8.setVisible(false);
-			}
-		});
-
-		JButton nextCards9 = new JButton("Next Cards");
-		nextCards9.setBounds(1000, 100, 100, 50);
-		mainPanel.add(nextCards9);
-
-		nextCards9.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e){
-				ImageIcon one = new ImageIcon("Welcome To/Welcome To/3_Pool.png");
-				ImageIcon Two = new ImageIcon("Welcome To/Welcome To/15_Fence.png");
-				ImageIcon Three = new ImageIcon("Welcome To/Welcome To/11_Market.png");
-				ImageIcon Four = new ImageIcon("Welcome To/Welcome To/B_Pool.png");
-				ImageIcon Five = new ImageIcon("Welcome To/Welcome To/B_Park.png");
-				ImageIcon Six = new ImageIcon("Welcome To/Welcome To/B_Park.png");
-
-				Image1.setIcon(one);
-				Image2.setIcon(Two);
-				Image3.setIcon(Three);
-				ImageBack1.setIcon(Four);
-				ImageBack2.setIcon(Five);
-				ImageBack3.setIcon(Six);
-				
-				nextCards9.setVisible(false);
-			}
-		});
-
-		JButton nextCards10 = new JButton("Next Cards");
-		nextCards10.setBounds(1000, 100, 100, 50);
-		mainPanel.add(nextCards10);
-
-		nextCards10.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e){
-				ImageIcon one = new ImageIcon("Welcome To/Welcome To/10_Construction.png");
-				ImageIcon Two = new ImageIcon("Welcome To/Welcome To/6_Fence.png");
-				ImageIcon Three = new ImageIcon("Welcome To/Welcome To/4_Market.png");
-				ImageIcon Four = new ImageIcon("Welcome To/Welcome To/B_Pool.png");
-				ImageIcon Five = new ImageIcon("Welcome To/Welcome To/B_Fence.png");
-				ImageIcon Six = new ImageIcon("Welcome To/Welcome To/B_Market.png");
-
-				Image1.setIcon(one);
-				Image2.setIcon(Two);
-				Image3.setIcon(Three);
-				ImageBack1.setIcon(Four);
-				ImageBack2.setIcon(Five);
-				ImageBack3.setIcon(Six);
-				
-			}
-		});
-		
-		JButton shuffle = new JButton("Shuffle");
-		shuffle.setBounds(1300, 100, 100, 50);
-		mainPanel.add(shuffle);
-
-		shuffle.addActionListener(new ActionListener(){
-			@Override
-			public void actionPerformed(ActionEvent e){
-				System.out.println("The card deck is shuffled");
-			}
-		});
-		
-		
+		//calling all methods
 		constructionx();
 		textFields();
 		poolButtons();
@@ -635,7 +405,8 @@ public class WelcomeTo
 		finalScore.setBounds(935,905,25,25);
 		mainPanel.add(finalScore);
 	}
-        
+
+	//creating buttons for the pools
 	private void poolButtons()
 	{
 		//Creating pool check boxes
@@ -704,6 +475,7 @@ public class WelcomeTo
 		mainPanel.add(poolNineTotal);
 	}
 
+	//creating buttons for construction
    private void constructionx()
    {
 	JCheckBox constructionOne = new JCheckBox();
@@ -754,7 +526,7 @@ public class WelcomeTo
 	mainPanel.add(constructionT3);
 
    }
-
+//adds fiance buttons
    private void fiances()
    {
 	JCheckBox onesHouse = new JCheckBox();
@@ -817,7 +589,7 @@ public class WelcomeTo
 	sixHousesFour.setBounds(675,765, 15, 15);
 	mainPanel.add(sixHousesFour);
    }
-	
+//adds bis buttons
    private void bis()
    {
 	JCheckBox bisOne = new JCheckBox();
@@ -849,7 +621,7 @@ public class WelcomeTo
 	bisNine.setBounds(825,800, 15, 15);
 	mainPanel.add(bisNine);
    }
-	
+	//adds subtracting text fields
    private void subtracting()
    {
 	JCheckBox roundAboutOne = new JCheckBox();
@@ -869,7 +641,7 @@ public class WelcomeTo
 	subtractThree.setBounds(860,820, 15, 15);
 	mainPanel.add(subtractThree);
    }
- 
+ //adds park crossing off
    private void parkCrossOff()
    {
 	JCheckBox rowOneParkOne = new JCheckBox();
@@ -911,27 +683,6 @@ public class WelcomeTo
 	rowThreeParkFive.setBounds(885,372, 15, 15);
 	mainPanel.add(rowThreeParkFive);
    }
-
-   /* final Point[] clickPoint = {null};
-		addedTextField.addMouseListener(new MouseAdapter() {
-			public void mousePressed(MouseEvent e) {
-				clickPoint[0] = e.getPoint();
-			}			
-		});
-		addedTextField.addMouseMotionListener(new MouseMotionAdapter() {
-			public void mouseDragged(MouseEvent e){
-				if(clickPoint[0] != null)
-				{
-					Point parentloc = addedTextField.getLocation();
-					int newX = parentloc.x + e.getX() - clickPoint[0].x;
-					int newY = parentloc.y + e.getY() - clickPoint[0].y;
-					addedTextField.setLocation(newX, newY);
-				}
-			}
-		});
-		mainPanel.revalidate();
-		mainPanel.repaint();
-	} */	
 
 	
 	
