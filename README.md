@@ -6,6 +6,12 @@ This application is the front-end development of the board game, "welcome to". T
 ## Rules
 https://cdn.1j1ju.com/medias/21/47/73-welcome-to-your-perfect-home-rulebook.pdf
 
+## Technology used
+Java, VSCode
+## Screenshots
+![image](https://github.com/user-attachments/assets/2847b906-9d0b-45d7-924d-7f76c2b63f89)
+![image](https://github.com/user-attachments/assets/831d99dd-9d96-48f4-a969-f63d95f987ad)
+
 ## Installation
 -Install the attached file
 
