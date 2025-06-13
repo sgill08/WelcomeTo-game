@@ -15,7 +15,7 @@ Java, VSCode
 ## Installation
 -Install the attached file
 
--Run it on a Java compiler like eclpise or vscode
+-Run it on a Java compiler like eclipse or vscode
 
 -Play and run the code
 
